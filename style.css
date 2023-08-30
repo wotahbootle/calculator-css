@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+* {
+  box-sizing: border-box;
+}
+
+.calculadora input,
+.calc-button   {
+  font-family: 'Space Mono';
+}
+
+body          {
+  background: #DCDCDC;
+  padding-bottom: 30px;
+  padding-top: 30px;  
+}
+
+.calculadora   {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+}
+
+.calculadora input   {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  padding: 20px 25px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #333;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
+}
+
+.calc-botao  {
+  background: rgba(0, 0, 0, 0.5); 
+  border: 1px solid #111; 
+  padding: 20px;
+  color: #EEE; 
+  border-radius: 5px; 
+  font-size: 22px; 
+  cursor: pointer;
+}
+
+.calculadora-botoes {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+
+.is-zero,
+.is-clear   {
+  grid-column: span 3;
+}
+
+.is-clear   {
+  background: #3572DB;
+}
+
+.is-equals {
+  background: #28D060;
+}
